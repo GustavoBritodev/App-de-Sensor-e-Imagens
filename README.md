@@ -55,7 +55,6 @@ Este repositório contém um projeto desenvolvido com Angular e Ionic, focado na
 ----------
 
 **By: Gustavo Brito**
-----------
 
 
 # Sensors and Images
