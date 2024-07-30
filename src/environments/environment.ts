@@ -1,7 +1,7 @@
 export const environment = {
   production: true,
   firebaseConfig : {
-    apiKey: "AIzaSyAuO6BXz_8nXz2NBNxPkZ4dolX9CkFRK50",
+    apiKey: "",
     authDomain: "sensor-img.firebaseapp.com",
     projectId: "sensor-img",
     storageBucket: "sensor-img.appspot.com",
