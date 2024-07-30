@@ -43,10 +43,11 @@ Este repositório contém um projeto desenvolvido com Angular e Ionic, focado na
     
 2.  Instale as dependências:
 
-    `cd seu-repositorio
-    npm install` 
+    `cd seu-repositorio`
     
-3.  Execute a aplicação:
+    `npm install` 
+    
+4.  Execute a aplicação:
   
     `ionic serve` 
     
