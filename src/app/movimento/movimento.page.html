@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-menu-button type="push" color="primary" slot="start"></ion-menu-button>
+    <ion-title>Sensores e Imagens</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div full><h1>Acelerômetro</h1></div>
+  <div full><h1>Eixo X: {{ formata(accel_x) }}</h1></div>
+  <div full><h1>Eixo Y: {{ formata(accel_y) }}</h1></div>
+  <div full><h1>Eixo Z: {{ formata(accel_z) }}</h1></div>
+
+  <div full><h1>Giroscópio</h1></div>
+  <div full><h1>Eixo X: {{ formata(gyro_x) }}</h1></div>
+  <div full><h1>Eixo Y: {{ formata(gyro_y) }}</h1></div>
+  <div full><h1>Eixo Z: {{ formata(gyro_z) }}</h1></div>
+
+  <ion-button (click)="toggle_Accel()" expand="full">
+    Ativa/Desativa Accel
+  </ion-button>
+  <ion-button (click)="toggle_Gyro()" expand="full">
+    Ativa/Desativa Gyro
+  </ion-button>
+
+  <div *ngIf="meiaVolta(gyro_z)">
+    Girou mais de 180º
+  </div>
+</ion-content>

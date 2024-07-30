@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-menu-button type="push" color="primary" slot="start"></ion-menu-button>
+    <ion-title>Sensores e Imagens</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div>
+    <h4>
+      Código Lido <ion-input type="text" [(ngModel)]="codigo"></ion-input>
+    </h4>
+  </div>
+
+  <zxing-scanner [formats]="allowedFormats" (scanSuccess)="scanSuccess($event)">
+  </zxing-scanner>
+
+  <ion-button [routerLink]="['/imagens']">View Scanned Codes</ion-button>
+</ion-content>
