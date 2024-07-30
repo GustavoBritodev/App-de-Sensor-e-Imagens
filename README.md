@@ -55,3 +55,62 @@ Este repositório contém um projeto desenvolvido com Angular e Ionic, focado na
 ----------
 
 **By: Gustavo Brito**
+----------
+
+
+# Sensors and Images
+
+This repository contains a project developed with Angular and Ionic, focused on integrating and utilizing device sensors and reading QR codes. The project is hosted on Firebase.
+
+## Features
+
+### 1. Camera Flash Control
+
+-   The home page (`HomePage`) allows you to turn the device's camera flash on and off.
+-   Uses the `MediaDevices` API to access the camera and manipulate video settings.
+
+### 2. Sensor Reading
+
+-   The motion page (`MovimentoPage`) allows the reading of the device's accelerometer and gyroscope sensors.
+-   Displays data for the X, Y, and Z axes for both sensors.
+-   Allows enabling and disabling device motion events.
+
+### 3. QR Code Reading
+
+-   The QR code page (`QrcodePage`) allows reading various barcode and QR code formats.
+-   Uses the `@zxing/library` for reading codes.
+-   Displays the read code and allows storing it.
+
+## Technologies Used
+
+-   **Angular**: Framework for application development.
+-   **Ionic**: Framework for hybrid application development.
+-   **Firebase**: Platform used for project hosting.
+-   **@zxing/library**: Library for reading barcodes and QR codes.
+
+## Project Structure
+
+-   **HomePage**: Home page with camera flash control.
+-   **MovimentoPage**: Page for reading motion sensors.
+-   **QrcodePage**: Page for reading QR codes.
+
+## How to Run the Project
+
+1.  Clone the repository:
+    
+    `git clone https://github.com/GustavoBritodev/App-de-Sensor-e-Imagens`
+    
+2.  Install the dependencies:
+    
+    `cd your-repository`
+    
+    `npm install`
+    
+3.  Run the application:
+    
+    `ionic serve`
+    
+
+----------
+
+**By: Gustavo Brito**
